@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyrank Dual Use Water Bottle 600ml | Rehydro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Inter', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* Product Gallery Styles */
+        .product-gallery {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .gallery-main {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 25px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: #f8f9fa;
+        }
+
+        .main-product-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .main-product-image:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .thumbnail-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .thumbnail-image:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .thumbnail-image.active {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .cyrank-container {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cyrank-container * {
+            box-sizing: border-box;
+        }
+
+        .cyrank-container .header {
+            background: linear-gradient(135deg, #667eea 0%, #19607a 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 40px;
+        }
+
+        .cyrank-container .brand {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .cyrank-container .header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            margin: 0 0 15px 0;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .cyrank-container .header .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1em;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .cyrank-container .price-badge {
+            background: white;
+            color: #667eea;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin-top: 20px;
+            font-size: 1.8em;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .cyrank-container .price-badge .old-price {
+            text-decoration: line-through;
+            font-size: 0.6em;
+            opacity: 0.6;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .cyrank-container .product-intro {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .cyrank-container .product-intro h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        .cyrank-container .product-intro p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.05em;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .cyrank-container .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .cyrank-container .spec-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .cyrank-container .spec-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cyrank-container .spec-card h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .cyrank-container .spec-card p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .cyrank-container .features {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .cyrank-container .features h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .cyrank-container .feature-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .cyrank-container .feature-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+
+        .cyrank-container .feature-icon {
+            font-size: 2em;
+            min-width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        .cyrank-container .feature-content h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.15em;
+            font-weight: 600;
+        }
+
+        .cyrank-container .feature-content p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .cyrank-container .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .cyrank-container .pros,
+        .cyrank-container .cons {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .cyrank-container .pros {
+            border-top: 5px solid #28a745;
+        }
+
+        .cyrank-container .cons {
+            border-top: 5px solid #ffc107;
+        }
+
+        .cyrank-container .pros h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #28a745;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .cyrank-container .cons h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #ff9800;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .cyrank-container .pros ul,
+        .cyrank-container .cons ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cyrank-container .pros li,
+        .cyrank-container .cons li {
+            font-family: 'Inter', sans-serif;
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+            line-height: 1.6;
+        }
+
+        .cyrank-container .pros li:before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .cyrank-container .cons li:before {
+            content: "\26A0";
+            position: absolute;
+            left: 0;
+            color: #ff9800;
+            font-size: 1.2em;
+        }
+
+        .cyrank-container .cons li strong {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .cyrank-container .cons li small {
+            color: #28a745;
+            font-style: italic;
+        }
+
+        .cyrank-container .target-audience {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .cyrank-container .target-audience h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cyrank-container .target-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .cyrank-container .target-card {
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .cyrank-container .target-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cyrank-container .target-card .emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .cyrank-container .target-card h4 {
+            font-family: 'Poppins', sans-serif;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .cyrank-container .target-card p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .cyrank-container .comparison {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow-x: auto;
+        }
+
+        .cyrank-container .comparison h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cyrank-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cyrank-container th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .cyrank-container td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .cyrank-container tr:hover {
+            background: #f8f9fa;
+        }
+
+        .cyrank-container .highlight {
+            background: #d4edda;
+            font-weight: 600;
+            color: #155724;
+        }
+
+        .cyrank-container .pricing {
+            background: linear-gradient(135deg, #667eea 0%, #1c698a 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cyrank-container .pricing h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .cyrank-container .pricing h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .cyrank-container .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .cyrank-container .pricing-card {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .cyrank-container .pricing-card.featured {
+            transform: scale(1.05);
+            border: 3px solid #ffc107;
+        }
+
+        .cyrank-container .pricing-card h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .cyrank-container .pricing-card .price {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
+            font-weight: 800;
+            color: #667eea;
+            margin: 15px 0;
+        }
+
+        .cyrank-container .pricing-card ul {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+            padding: 0;
+        }
+
+        .cyrank-container .pricing-card li {
+            font-family: 'Inter', sans-serif;
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 0.9em;
+        }
+
+        .cyrank-container .pricing-card li:before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .cyrank-container .cta {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .cyrank-container .cta h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .cyrank-container .cta p {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cyrank-container .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .cyrank-container .btn {
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        .cyrank-container .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #21687b 100%);
+            color: white;
+        }
+
+        .cyrank-container .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .cyrank-container .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .cyrank-container .faq {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .cyrank-container .faq h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .cyrank-container .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .cyrank-container .faq-item h4 {
+            font-family: 'Poppins', sans-serif;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .cyrank-container .faq-item p {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cyrank-container .footer {
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .cyrank-container .footer h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .cyrank-container .trust-badge {
+            font-family: 'Inter', sans-serif;
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #e9ecef;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .cyrank-container .follow-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .cyrank-container .follow-us a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea, #155272);
+            color: #fff;
+            border-radius: 25px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95em;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            min-width: 140px;
+        }
+
+        .cyrank-container .follow-us a:hover {
+            opacity: 0.9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .cyrank-container .bonus-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .cyrank-container .bonus-section h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cyrank-container .bonus-section p {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .cyrank-container .header h1 {
+                font-size: 1.8em;
+            }
+
+            .cyrank-container .pros-cons {
+                grid-template-columns: 1fr;
+            }
+
+            .cyrank-container .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .cyrank-container .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cyrank-container .btn {
+                width: 100%;
+            }
+
+            .cyrank-container .follow-us {
+                flex-direction: column;
+            }
+
+            .cyrank-container .follow-us a {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .thumbnail-image {
+                height: 80px;
+            }
+
+            .product-gallery {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyrank-container">
+        <div class="header">
+            <div class="brand">REHYDRO OFFICIAL</div>
+            <h1>Cyrank Dual Use Water Bottle 600ml</h1>
+            <p class="subtitle">Botol Minum Inovatif 2-in-1 untuk Gaya Hidup Aktif dan Sehat</p>
+            <div class="price-badge">
+                <span class="old-price">Rp 85.000</span>
+                Rp 60.000
+            </div>
+        </div>
+
+        <!-- Hero Product Gallery -->
+        <div class="product-gallery">
+            <div class="gallery-main">
+                <img src="https://m.media-amazon.com/images/I/71jMawq3DgL._AC_SL1001_.jpg" 
+                     alt="Cyrank Dual Use Water Bottle 600ml" 
+                     class="main-product-image"
+                     id="mainImage">
+            </div>
+            
+            <div class="gallery-thumbnails">
+                <img src="https://m.media-amazon.com/images/I/61+sVpAa8+L._AC_SL1001_.jpg" 
+                     alt="Full View" 
+                     class="thumbnail-image active"
+                     title="Tampilan Utama"
+                     onclick="changeImage(this)">
+                <img src="https://m.media-amazon.com/images/I/61580swKyEL._AC_SL1001_.jpg" 
+                     alt="Dual Straw Detail" 
+                     class="thumbnail-image"
+                     title="Detail Dual Straw"
+                     onclick="changeImage(this)">
+                <img src="https://m.media-amazon.com/images/I/51Gg2CAVbXL._AC_SL1001_.jpg" 
+                     alt="Handle Detail" 
+                     class="thumbnail-image"
+                     title="Detail Pegangan"
+                     onclick="changeImage(this)">
+                <img src="https://m.media-amazon.com/images/I/51XPL3CJh7L._AC_SL1001_.jpg" 
+                     alt="Compartment Detail" 
+                     class="thumbnail-image"
+                     title="Detail Kompartemen"
+                     onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="product-intro">
+            <h2>Apa Itu Cyrank Dual Use Water Bottle?</h2>
+            <p>Cyrank Dual Use Water Bottle adalah solusi inovatif untuk Anda yang ingin membawa dua jenis minuman berbeda dalam satu botol yang praktis. Dengan desain 2-in-1 yang unik, botol ini memiliki <strong>dua kompartemen terpisah</strong> yang masing-masing dilengkapi sedotan sendiri.</p>
+            <p>Tidak perlu lagi repot membawa dua botol terpisah! Cocok untuk aktivitas gym, hiking, camping, traveling, atau penggunaan sehari-hari.</p>
+        </div>
+
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3>📏 Kapasitas</h3>
+                <p>600ml total (300ml per kompartemen)</p>
+            </div>
+            <div class="spec-card">
+                <h3>🧪 Material</h3>
+                <p>Polypropylene (PP) Food-Grade, BPA Free</p>
+            </div>
+            <div class="spec-card">
+                <h3>🌡️ Range Suhu</h3>
+                <p>-20°C hingga 110°C</p>
+            </div>
+            <div class="spec-card">
+                <h3>🎨 Warna</h3>
+                <p>Blue (Biru Modern)</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>Fitur Unggulan yang Membuat Berbeda</h2>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-content">
+                    <h3>Desain Dual Compartment</h3>
+                    <p>Dua kompartemen benar-benar terpisah memungkinkan Anda membawa air putih dan minuman elektrolit sekaligus. Tidak ada risiko tercampur!</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🥤</div>
+                <div class="feature-content">
+                    <h3>Sistem Dual Straw</h3>
+                    <p>Dilengkapi 2 sedotan terpisah untuk setiap kompartemen. Anak-anak dapat menikmati dua minuman favorit mereka tanpa harus membawa botol kedua.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🤲</div>
+                <div class="feature-content">
+                    <h3>Pegangan Silikon Ergonomis</h3>
+                    <p>Handle silikon yang nyaman dan anti-slip, mudah digenggam bahkan saat tangan berkeringat. Ringan dan mudah digantung di tas atau backpack.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-content">
+                    <h3>Tutup Anti Tumpah</h3>
+                    <p>Desain tutup yang rapat melindungi sedotan dari debu dan mencegah tumpah saat di dalam tas. Mudah dibuka dengan satu tangan.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">✨</div>
+                <div class="feature-content">
+                    <h3>Tampilan Modern dan Elegan</h3>
+                    <p>Warna biru yang cantik dengan desain minimalis modern. Cocok untuk semua kalangan, dari anak-anak hingga dewasa.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-content">
+                    <h3>Material Food-Grade Premium</h3>
+                    <p>Terbuat dari PP berkualitas tinggi yang aman untuk kesehatan, tidak menyerap bau atau warna, dan tahan suhu ekstrem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>✅ Kelebihan Utama</h3>
+                <ul>
+                    <li>Desain 2-in-1 yang fungsional dan praktis</li>
+                    <li>Material food-grade aman dan berkualitas</li>
+                    <li>Dual straw untuk dua minuman berbeda</li>
+                    <li>Pegangan ergonomis yang nyaman</li>
+                    <li>Tutup anti tumpah yang rapat</li>
+                    <li>Tampilan stylish dan modern</li>
+                    <li>Harga sangat terjangkau untuk fitur premium</li>
+                </ul>
+            </div>
+
+            <div class="cons">
+                <h3>⚠️ Pertimbangan Kecil</h3>
+                <ul>
+                    <li>
+                        <strong>Kapasitas per kompartemen 300ml</strong><br>
+                        <small>Solusi: Ideal untuk aktivitas 2-3 jam atau sebagai botol sekunder</small>
+                    </li>
+                    <li>
+                        <strong>Pembersihan perlu sedikit perhatian extra</strong><br>
+                        <small>Solusi: Gunakan straw brush yang kami berikan gratis, bersihkan setiap hari</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="target-audience">
+            <h2>Siapa yang Cocok Menggunakan Produk Ini?</h2>
+            <div class="target-grid">
+                <div class="target-card">
+                    <div class="emoji">💪</div>
+                    <h4>Pecinta Fitness</h4>
+                    <p>Air putih + protein shake dalam satu botol</p>
+                </div>
+                <div class="target-card">
+                    <div class="emoji">🏔️</div>
+                    <h4>Outdoor Enthusiast</h4>
+                    <p>Perfect untuk hiking dan camping</p>
+                </div>
+                <div class="target-card">
+                    <div class="emoji">👨‍👩‍👧</div>
+                    <h4>Orang Tua</h4>
+                    <p>Anak suka variasi minuman berbeda</p>
+                </div>
+                <div class="target-card">
+                    <div class="emoji">💼</div>
+                    <h4>Pekerja Kantoran</h4>
+                    <p>Hemat waktu, tidak perlu isi ulang sering</p>
+                </div>
+                <div class="target-card">
+                    <div class="emoji">✈️</div>
+                    <h4>Traveler</h4>
+                    <p>Praktis dan hemat space bagasi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison">
+            <h2>Perbandingan dengan Botol Biasa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fitur</th>
+                        <th>Cyrank Dual Use</th>
+                        <th>Botol Biasa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kapasitas</td>
+                        <td class="highlight">600ml (2 kompartemen)</td>
+                        <td>600ml (1 kompartemen)</td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Sedotan</td>
+                        <td class="highlight">2 sedotan terpisah</td>
+                        <td>1 sedotan</td>
+                    </tr>
+                    <tr>
+                        <td>Variasi Minuman</td>
+                        <td class="highlight">2 jenis berbeda</td>
+                        <td>1 jenis saja</td>
+                    </tr>
+                    <tr>
+                        <td>Kepraktisan</td>
+                        <td class="highlight">1 botol = 2 minuman</td>
+                        <td>Harus bawa 2 botol</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td class="highlight">PP Food-Grade</td>
+                        <td>Bervariasi</td>
+                    </tr>
+                    <tr>
+                        <td>Range Suhu</td>
+                        <td class="highlight">-20°C - 110°C</td>
+                        <td>Terbatas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pricing">
+            <h2>🎉 Paket Hemat Rehydro</h2>
+            <p style="margin-bottom: 30px; font-family: 'Inter', sans-serif;">Pilih paket yang sesuai kebutuhan Anda - Semakin banyak semakin hemat!</p>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Single Pack</h3>
+                    <div class="price">Rp 60.000</div>
+                    <ul>
+                        <li>1 pcs Cyrank Bottle</li>
+                        <li>GRATIS Straw Brush</li>
+                        <li>GRATIS Sticker Rehydro</li>
+                        <li>Garansi Original</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>🔥 Best Deal</h3>
+                    <div class="price">Rp 110.000</div>
+                    <ul>
+                        <li>2 pcs Cyrank Bottle</li>
+                        <li>Hemat Rp 10.000</li>
+                        <li>GRATIS ONGKIR Jabodetabek</li>
+                        <li>GRATIS Straw Brush (2 pcs)</li>
+                        <li>GRATIS Sticker Rehydro</li>
+                        <li>Garansi Original</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Family Pack</h3>
+                    <div class="price">Rp 160.000</div>
+                    <ul>
+                        <li>3 pcs Cyrank Bottle</li>
+                        <li>Hemat Rp 20.000</li>
+                        <li>GRATIS ONGKIR Se-Indonesia</li>
+                        <li>GRATIS Straw Brush (3 pcs)</li>
+                        <li>Garansi Original</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bonus-section">
+                <h3>💝 BONUS SPESIAL</h3>
+                <p>Beli 5 pcs cuma Rp 260.000 + BONUS 1 pcs gratis + GRATIS ONGKIR Se-Indonesia!</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>Siap Upgrade Pengalaman Hidrasi Anda?</h2>
+            <p style="color: #666; margin-bottom: 10px;">Stok terbatas! Promo berlaku hingga akhir bulan</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">💬 Pesan via WhatsApp</a>
+                <a href="#" class="btn btn-secondary">🛒 Beli di Marketplace</a>
+            </div>
+            <div style="margin-top: 30px;">
+                <span class="trust-badge">✓ 100% Original</span>
+                <span class="trust-badge">✓ Garansi Resmi</span>
+                <span class="trust-badge">✓ 1000+ Happy Customers</span>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h2 style="text-align: center; margin-bottom: 30px;">Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="faq-item">
+                <h4>Apakah botol ini bisa untuk minuman panas?</h4>
+                <p>Ya, material PP dapat menahan suhu hingga 110°C, cocok untuk minuman hangat seperti teh atau kopi.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Bagaimana cara membersihkan sedotannya?</h4>
+                <p>Sedotan dapat dilepas dan dicuci dengan air sabun. Gunakan straw brush cleaner yang kami berikan gratis untuk hasil maksimal.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Apakah kedua kompartemen benar-benar terpisah?</h4>
+                <p>Ya, kedua kompartemen sepenuhnya terpisah sehingga minuman tidak akan tercampur sama sekali.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Berapa lama pengiriman?</h4>
+                <p>Untuk Jabodetabek 2-3 hari, luar Jabodetabek 3-5 hari kerja.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Apakah aman untuk anak-anak?</h4>
+                <p>Sangat aman! Material BPA-free dan desain sedotan memudahkan anak-anak minum dengan nyaman.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Bagaimana dengan garansi produk?</h4>
+                <p>Rehydro memberikan garansi 100% original. Jika ada kerusakan manufaktur dalam 7 hari, bisa tukar baru.</p>
+            </div>
+        </div>
+
+        <div class="follow-us">
+            <a href="#">🐙 GitHub</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">📺 YouTube</a>
+            <a href="#">📷 Instagram</a>
+        </div>
+
+        <div class="footer">
+            <h3 style="color: #667eea; margin-bottom: 15px;">REHYDRO</h3>
+            <p style="font-style: italic; color: #999;">Hydrate Your Life, Elevate Your Style</p>
+            <p style="margin-top: 20px;">
+                <strong>Contact Us:</strong><br>
+                WhatsApp: 0812-XXXX-XXXX | Email: hello@rehydro.com<br>
+                Instagram: @re_hydro | Tokopedia dan Shopee: Rehydro Official
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #999;">
+                © 2025 Rehydro. All Rights Reserved. | Official Distributor Cyrank Indonesia
+            </p>
+        </div>
+    </div>
+    <!-- TARUH KODE INI DI SINI -->
+    <script>
+        function changeImage(thumbnail) {
+            // Update gambar utama
+            const mainImage = document.getElementById('mainImage');
+            mainImage.style.opacity = '0.5';
+            
+            setTimeout(() => {
+                mainImage.src = thumbnail.src;
+                mainImage.alt = thumbnail.alt;
+                mainImage.style.opacity = '1';
+            }, 200);
+            
+            // Update class active pada thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail-image');
+            thumbnails.forEach(img => img.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
+    </script>
+    <!-- SAMPAI DI SINI -->
+</body>
+</html>
